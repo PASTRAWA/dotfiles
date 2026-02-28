@@ -1,0 +1,49 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.5); /* Şeffaf koyu arka plan */
+    color: #cdd6f4;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #bac2de;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #cba6f7; /* Aktif workspace rengi (Mor) */
+    border-bottom: 3px solid #cba6f7;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f5c2e7;
+}
+
+#clock, #cpu, #memory, #pulseaudio, #tray {
+    padding: 0 15px;
+    margin: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+#customPower {
+    background-color: #f38ba8; /* Kırmızımsı bir ton */
+    color: #1e1e2e;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#customPower:hover {
+    background-color: #eba0ac; /* Üzerine gelince biraz daha açık renk */
+    transition: all 0.3s ease;
+}
