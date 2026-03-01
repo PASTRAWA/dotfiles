@@ -33,17 +33,18 @@ window#waybar {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
 }
-#customPower {
-    background-color: #f38ba8; /* Kırmızımsı bir ton */
-    color: #1e1e2e;
+#custom-power {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
     border-radius: 10px;
     padding: 0 15px;
-    margin-left: 10px;
+    margin: 4px;
     font-weight: bold;
     font-size: 16px;
 }
 
-#customPower:hover {
-    background-color: #eba0ac; /* Üzerine gelince biraz daha açık renk */
+#custom-power:hover {
+    background: rgba(255, 255, 255, 1);
+    color: black;
     transition: all 0.3s ease;
 }

@@ -4,8 +4,8 @@
     "height": 30,
     "spacing": 5,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "tray", "customPower"],
+    "modules-center": ["cpu","clock","memory"],
+    "modules-right": ["pulseaudio", "tray", "custom/power"],
 
     "hyprland/workspaces": {
         "format": "{name}",
@@ -25,10 +25,12 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "",
-        "format-icons": { "default": ["", "", ""] }
+        "format-icons": { "default": ["", "", ""] },
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ 1"
     },
-    "customPower": {
-        "format": "⏻ ",
+    "custom/power": {
+        "format": " ⏻ ",
         "tooltip": false,
         "on-click": "wlogout &",
         "on-click-right": "hyprctl dispatch exit" 
